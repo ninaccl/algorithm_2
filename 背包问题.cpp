@@ -30,7 +30,11 @@ int maxValueDP(int* c, int* p, int bag, int len)
             }
         }
     }
-    return dp[0][0];
+    int res = dp[0][0];
+    for(int i=0;i<len+1;i++)
+        delete []dp[i];
+    delete []dp;
+    return res;
 }
 
 int main(void) 
