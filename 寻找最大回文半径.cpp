@@ -62,7 +62,6 @@ int main(void)
 {
     string str1 = "abc1234321ab";
     string str = "12";
-    cout<<maxLcpsLength(str)<<endl;
+    cout<<maxLcpsLength(str1)<<endl;
     return 0;
-
 }
