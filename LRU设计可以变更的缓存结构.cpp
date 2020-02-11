@@ -7,6 +7,10 @@
 // 2.某个key的set和get操作一旦发生，认为这个key的记录成了最经常使用的
 // 3.当缓存大小超过k时，移除最不经常使用的记录，即set或get最久远的
 
+// 【思路】
+// 双向链表存储访问次序
+// 哈希表存储key和value
+
 #include <iostream>
 #include <unordered_map>
 #include <string>
